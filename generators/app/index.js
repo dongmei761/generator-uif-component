@@ -57,7 +57,7 @@ module.exports = yeoman.generators.Base.extend({
         componentTemplate = (item === 'component' && projectType === 'new grid') ? 'grid.txt' : item + '.txt';
         this.fs.copyTpl(
           this.templatePath(componentTemplate),
-          this.destinationPath(componentName + '/' + item + '/' + componentName + '_' + item + fileType),
+          this.destinationPath(componentName + '/' + item + 's/' + componentName + '_' + item + fileType),
           {
             name: componentName,
             projectType: projectType
