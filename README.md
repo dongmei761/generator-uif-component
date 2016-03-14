@@ -1,2 +1,2 @@
 # generator-uif-component
-A generator for simply creating new UI components
+A generator for simply creating new UIF components
