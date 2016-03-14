@@ -1,0 +1,7 @@
+const <%= name %>Actions = {
+  action1: function() {
+    return {};
+  }
+};
+
+module.exports = <%= name %>Actions;

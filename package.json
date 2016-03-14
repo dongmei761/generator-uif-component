@@ -1,0 +1,26 @@
+{
+  "name": "generator-uif-component",
+  "version": "1.0.0",
+  "description": "A generator for creating new UI component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongmei761/generator-uif-component.git"
+  },
+  "dependencies": {
+    "yeoman-generator": "^0.21.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "yeoman-assert": "^2.0.0"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "dmzhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongmei761/generator-uif-component/issues"
+  },
+  "homepage": "https://github.com/dongmei761/generator-uif-component#readme"
+}

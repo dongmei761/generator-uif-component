@@ -1,0 +1,13 @@
+const { createReducer }           = require('fw-modula');
+const childReducer = require('./childReducer.js');
+
+const <%= name %>Reducer = createReducer(
+  function(state, action) {
+    return state;
+  },
+  {
+    childReducer: childReducer
+  }
+);
+
+module.exports = <%= name %>Reducer;

@@ -1,0 +1,8 @@
+const { createContainer } = require('fw-modula');
+const CBPListComponent = require('../components/cbp_list_component.jsx');
+const CBPListModel = require('../models/cbp_list_model.js');
+const CBPListReducer = require('../reducers/cbp_list_reducer.js');
+
+const CBPListContainer = createContainer(CBPListModel, CBPListReducer, CBPListComponent);
+
+module.exports = CBPListContainer;

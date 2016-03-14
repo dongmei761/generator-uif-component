@@ -1,0 +1,9 @@
+const { createComponent, PropTypes<% if(projectType === 'component with model'){ %>, connectToModel<% } %> } = require('fw-modula');
+
+const <%= name %>Component = createComponent({
+  render: function() {
+    return ();
+  }
+}<% if(projectType === 'component with model'){ %>, connectToModel(<%= name %>Model) <% } %>);
+
+module.exports = <%= name %>Component;

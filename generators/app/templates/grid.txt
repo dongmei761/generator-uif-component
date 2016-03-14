@@ -1,0 +1,114 @@
+const { Grid, Helpers } = require('fw-grid');
+const { LinkActiveMethods } = Helpers;
+const { createComponent, PropTypes, createChildDispatch, connectToModel } = require('fw-modula');
+const <%= name %>Model = require('../models/<%= name %>_model.js');
+const <%= name %>Actions = require('../actions/<%= name %>_actions.js');
+
+const CBPListComponent = createComponent({
+
+  renderGrid() {
+    return (
+      <div>
+        <Grid
+          search={this.search()}
+          title={this.title()}
+          levels={this.levels()}
+          columns={this.columns()}
+          operations={this.operations()}
+          addons={this.addons()}
+          data={this.data()}
+          needLoadingIcon={false}
+        />
+      </div>
+    );
+  },
+
+  render() {
+    return (
+      <div>
+        {this.renderGrid()}
+      </div>
+    );
+  },
+
+  title() {
+    return '';
+  },
+
+  search() {
+    return {
+      quickSearch: {
+        columns: [''],
+        value  : ''
+      },
+      advancedSearch: {
+        filters: [
+          {
+            name   : '',
+            display: '',
+            options: [
+              { value: '', display: '' },
+              { value: '', display: '' }
+            ]
+          }
+        ],
+        queries: [
+          {
+            name     : '',
+            display  : '',
+            operators: ['', ''],
+            rule     : {}
+          }
+        ],
+        value: {
+          filters   : [],
+          queries   : [],
+          queryMatch: 'ANY'
+        },
+        expanded: false
+      }
+    };
+  },
+
+
+  levels: function() {
+    return {
+      1: { selection: '' }
+    };
+  },
+
+  columns() {
+    return [
+      {
+        name    : '',
+        display : '',
+        size    : '',
+        sortable: true,
+        align   : ''
+      }
+    ];
+  },
+
+  data() {
+    return [
+      {}
+    ];
+  },
+
+
+  operations() {
+    return [
+      {
+        name   : '',
+        onClick: function() {}
+      }
+    ];
+  },
+
+
+  addons() {
+    return {};
+  }
+}, connectToModel(<%= name %>Model));
+
+module.exports = <%= name %>Component;

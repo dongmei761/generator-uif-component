@@ -1,0 +1,12 @@
+const { createModel } = require('fw-modula');
+
+const <%= name %>Model = createModel(
+  {
+    attribute1: function() {}
+  },
+  {
+    method1() {}
+  }
+);
+
+module.exports = <%= name %>Model;
